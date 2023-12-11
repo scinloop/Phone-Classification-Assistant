@@ -1,7 +1,7 @@
 # Phone-Classification-Assistant.
 
 [//]: # (![gui-test]&#40;./gui-test.png&#41;)
-[//]: # (这是一个图像识别项目，基于 tensorflow，现有的 CNN 网络可以识别四种花的种类。适合新手对使用 tensorflow 进行一个完整的图像识别过程有一个大致轮廓。项目包括对数据集的处理，从硬盘读取数据，CNN 网络的定义，训练过程，还实现了一个 GUI 界面用于使用训练好的网络。)
+[//]: # (这是一个图像识别项目，基于 tensorflow，现有的 CNN 网络可以识别四种花的种类。适合新手对使用 tensorflow 进行一个完整的图像识别过程有一个大致轮廓。)
 
 ## Require
 
