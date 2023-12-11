@@ -21,7 +21,7 @@ num_samples = 666
 
 # 制作TFRecords数据
 def create_record():
-    writer = tf.python_io.TFRecordWriter("flower_train.tfrecords")
+    writer = tf.python_io.TFRecordWriter("train.tfrecords")
     for index, name in enumerate(classes):
         class_path = orig_picture + "/" + name + "/"
         for img_name in os.listdir(class_path):
@@ -68,7 +68,7 @@ def read_and_decode(filename):
 # =======================================================================================
 if __name__ == '__main__':
     create_record()
-    batch = read_and_decode('flower_train.tfrecords')
+    batch = read_and_decode('train.tfrecords')
     init_op = tf.group(tf.global_variables_initializer(), tf.local_variables_initializer())
 
     with tf.Session() as sess:  # 开始一个会话
