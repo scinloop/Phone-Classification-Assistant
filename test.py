@@ -68,7 +68,7 @@ def evaluate_one_image(image_array):
 # ------------------------------------------------------------------------
 
 if __name__ == '__main__':
-    img = Image.open('test/xiaomi.png')
+    img = Image.open('test/apple.jpg')
     plt.imshow(img)
     plt.show()
     imag = img.resize([64, 64])
